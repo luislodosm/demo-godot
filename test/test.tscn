@@ -1,0 +1,221 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://test/personaje/saltar_3.png" type="Texture" id=1]
+[ext_resource path="res://test/personaje/reposo_2.png" type="Texture" id=2]
+[ext_resource path="res://test/personaje/reposo_3.png" type="Texture" id=3]
+[ext_resource path="res://test/personaje/reposo_4.png" type="Texture" id=4]
+[ext_resource path="res://scripts/nivel/reiniciar.gd" type="Script" id=5]
+[ext_resource path="res://scripts/nivel/salir.gd" type="Script" id=6]
+[ext_resource path="res://test/personaje/saltar_1.png" type="Texture" id=7]
+[ext_resource path="res://test/personaje/saltar_2.png" type="Texture" id=8]
+[ext_resource path="res://test/personaje/saltar_4.png" type="Texture" id=9]
+[ext_resource path="res://test/personaje/correr_5.png" type="Texture" id=10]
+[ext_resource path="res://test/personaje/correr_4.png" type="Texture" id=11]
+[ext_resource path="res://scripts/animacion/accion_animacion.gd" type="Script" id=12]
+[ext_resource path="res://test/personaje/correr_1.png" type="Texture" id=13]
+[ext_resource path="res://test/personaje/correr_3.png" type="Texture" id=14]
+[ext_resource path="res://test/personaje/reposo_1.png" type="Texture" id=15]
+[ext_resource path="res://scripts/movimiento/salto.gd" type="Script" id=16]
+[ext_resource path="res://test/escenario/tileset.png" type="Texture" id=17]
+[ext_resource path="res://scripts/animacion/reflejo_horizontal.gd" type="Script" id=18]
+[ext_resource path="res://test/personaje/correr_6.png" type="Texture" id=19]
+[ext_resource path="res://scripts/movimiento/velocidad_horizontal.gd" type="Script" id=20]
+[ext_resource path="res://test/personaje/correr_2.png" type="Texture" id=21]
+[ext_resource path="res://test/sprites/nave.png" type="Texture" id=22]
+[ext_resource path="res://scripts/movimiento/giro.gd" type="Script" id=23]
+[ext_resource path="res://scripts/movimiento/propulsion.gd" type="Script" id=24]
+[ext_resource path="res://scripts/movimiento/fuerza_horizontal.gd" type="Script" id=25]
+[ext_resource path="res://scripts/movimiento/velocidad_vertical.gd" type="Script" id=26]
+[ext_resource path="res://scripts/movimiento/fuerza_vertical.gd" type="Script" id=27]
+[ext_resource path="res://test/sprites/tanque.png" type="Texture" id=28]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 46.172, 23.0955 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 1 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "saltar",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 21 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "correr",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "reposo",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7.32075, 15.2544 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 13.4617, 11.3715 )
+
+[node name="Test" type="Node2D"]
+
+[node name="Reiniciar" type="Node" parent="."]
+script = ExtResource( 5 )
+
+[node name="Salir" type="Node" parent="."]
+script = ExtResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 318.453, 195.572 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+
+[node name="Plataforma1" type="StaticBody2D" parent="."]
+position = Vector2( 196.628, 246.58 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Plataforma1"]
+position = Vector2( 0.573463, -4.56752 )
+texture = ExtResource( 17 )
+region_enabled = true
+region_rect = Rect2( 39.8804, 19.3798, 101.037, 83.2256 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma1"]
+position = Vector2( -0.787949, -8.6674 )
+shape = SubResource( 1 )
+
+[node name="Plataforma2" type="StaticBody2D" parent="."]
+position = Vector2( 438.58, 243.545 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Plataforma2"]
+position = Vector2( 0.573463, -4.56752 )
+texture = ExtResource( 17 )
+region_enabled = true
+region_rect = Rect2( 39.8804, 19.3798, 101.037, 83.2256 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma2"]
+position = Vector2( -0.787949, -8.6674 )
+shape = SubResource( 1 )
+
+[node name="Personaje" type="RigidBody2D" parent="."]
+position = Vector2( 195.288, 158.081 )
+mode = 2
+gravity_scale = 10.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Personaje"]
+frames = SubResource( 2 )
+animation = "reposo"
+
+[node name="ReflejoHorizontal" type="Node" parent="Personaje/AnimatedSprite"]
+script = ExtResource( 18 )
+
+[node name="AccionAnimacion1" type="Node" parent="Personaje/AnimatedSprite"]
+script = ExtResource( 12 )
+
+[node name="AccionAnimacion2" type="Node" parent="Personaje/AnimatedSprite"]
+script = ExtResource( 12 )
+accion = "izquierda"
+
+[node name="AccionAnimacion3" type="Node" parent="Personaje/AnimatedSprite"]
+script = ExtResource( 12 )
+accion = "arriba"
+animacion = "saltar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje"]
+position = Vector2( -0.456753, 3.09575 )
+shape = SubResource( 3 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Personaje"]
+enabled = true
+cast_to = Vector2( 0, 20 )
+
+[node name="VelocidadHorizontal" type="Node" parent="Personaje"]
+script = ExtResource( 20 )
+
+[node name="Salto" type="Node" parent="Personaje"]
+script = ExtResource( 16 )
+fuerza = 120
+
+[node name="Nave1" type="RigidBody2D" parent="."]
+position = Vector2( 258.427, 105.141 )
+gravity_scale = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Nave1"]
+rotation = -1.5708
+texture = ExtResource( 22 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave1"]
+shape = SubResource( 4 )
+
+[node name="Giro" type="Node" parent="Nave1"]
+script = ExtResource( 23 )
+
+[node name="Propulsion" type="Node" parent="Nave1"]
+script = ExtResource( 24 )
+
+[node name="Nave2" type="RigidBody2D" parent="."]
+position = Vector2( 334.337, 104.367 )
+mode = 2
+gravity_scale = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Nave2"]
+rotation = -1.5708
+texture = ExtResource( 22 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave2"]
+shape = SubResource( 4 )
+
+[node name="FuerzaHorizontal" type="Node" parent="Nave2"]
+script = ExtResource( 25 )
+
+[node name="FuerzaVertical" type="Node" parent="Nave2"]
+script = ExtResource( 27 )
+
+[node name="Nave3" type="RigidBody2D" parent="."]
+position = Vector2( 369.185, 108.947 )
+mode = 2
+gravity_scale = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Nave3"]
+texture = ExtResource( 22 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nave3"]
+shape = SubResource( 4 )
+
+[node name="VelocidadHorizontal" type="Node" parent="Nave3"]
+script = ExtResource( 20 )
+
+[node name="VelocidadVertical" type="Node" parent="Nave3"]
+script = ExtResource( 26 )
+
+[node name="Tanque" type="RigidBody2D" parent="."]
+position = Vector2( 438.177, 162.292 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tanque"]
+texture = ExtResource( 28 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tanque"]
+shape = SubResource( 4 )
+
+[node name="FuerzaHorizontal" type="Node" parent="Tanque"]
+script = ExtResource( 25 )
+fuerza = 200
