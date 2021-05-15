@@ -1,2 +1,2 @@
 extends Mecanica
-class_name Automatismo
+class_name Automatismo, "res://iconos/automatismo.png"
