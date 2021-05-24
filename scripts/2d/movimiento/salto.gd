@@ -15,5 +15,5 @@ func _physics_process(_delta):
 			
 func saltar():
 	var fuerza_aplicada = fuerza * Vector2.UP 
-	fuerza_aplicada *= sqrt(cuerpo.gravity_scale)
+	fuerza_aplicada *= sqrt(abs(cuerpo.gravity_scale))
 	cuerpo.apply_impulse(Vector2.ZERO, fuerza_aplicada)
