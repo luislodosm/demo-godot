@@ -1,5 +1,5 @@
 extends Movimiento
-class_name VelocidadVertical, "res://iconos/vertical.png"
+class_name VelocidadVertical, "res://iconos/velocidad_vertical.png"
 
 export var velocidad = 100
 export var accion_arriba = "arriba" 

@@ -7,6 +7,7 @@ onready var objetivo
 onready var cuerpo = get_parent() as RigidBody2D
 
 func _ready():
+	
 	var error = false
 	if ruta_objetivo == "":
 		printerr(name + " no tiene objetivo")
@@ -14,6 +15,7 @@ func _ready():
 	if not cuerpo:
 		printerr(get_parent().name + " no es RigidBody2D")
 		error = true
+	
 	if error:
 		set_physics_process(false)
 	else:

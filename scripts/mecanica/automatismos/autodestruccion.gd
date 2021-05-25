@@ -2,14 +2,11 @@ extends Automatismo
 class_name AutoDestruccion, "res://iconos/autodestruccion.png"
 
 export var explosion: PackedScene
-onready var temporizador = get_node("../Timer") as Timer
+export var tiempo = 3.0
 
 func _ready():
-	if temporizador:
-		temporizador.connect("timeout", self, "explotar")
-		temporizador.start()
-	else:
-		printerr(name + " no tiene Timer")
+	yield(get_tree().create_timer(tiempo), "timeout")
+	explotar()
 
 func explotar():
 	if explosion:

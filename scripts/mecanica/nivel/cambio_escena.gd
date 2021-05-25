@@ -19,6 +19,7 @@ func _ready():
 	if not area:
 		printerr(area.name + " no es Area2D")
 		error = true
+	
 	if error:
 		queue_free()
 	else:

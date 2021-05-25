@@ -1,5 +1,5 @@
 extends Animacion
-class_name ReflejoHorizontal, "res://iconos/reflejo.png"
+class_name ReflejoHorizontal, "res://iconos/reflejo_horizontal.png"
 
 export var accion_normal = "derecha" 
 export var accion_reflejado = "izquierda" 

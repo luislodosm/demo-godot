@@ -1,5 +1,5 @@
 extends Interaccion
-class_name LanzadorProyectiles, "res://iconos/lanzador.png"
+class_name LanzadorProyectiles, "res://iconos/lanzador_proyectiles.png"
 
 export var proyectil: PackedScene
 export var accion = "disparar"

@@ -1,5 +1,5 @@
 extends Movimiento
-class_name FuerzaVertical, "res://iconos/vertical.png"
+class_name FuerzaVertical, "res://iconos/fuerza_vertical.png"
 
 export var fuerza = 100
 export var accion_arriba = "arriba" 
