@@ -1,7 +1,7 @@
 extends Movimiento
 class_name FuerzaHorizontal, "res://iconos/horizontal.png"
 
-export var fuerza = 100
+export var fuerza = 200
 export var accion_derecha = "derecha" 
 export var accion_izquierda = "izquierda" 
 

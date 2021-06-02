@@ -14,6 +14,6 @@ func _ready():
 		cuerpo.contacts_reported = 1
 
 func golpear(otro_cuerpo):
-	var vida = otro_cuerpo.get_node_or_null("Vida")
+	var vida = otro_cuerpo.get_node_or_null("CuerpoVida")
 	if vida:
 		vida.herir(fuerza)
