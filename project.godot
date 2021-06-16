@@ -138,16 +138,6 @@ _global_script_classes=[ {
 "class": "Salto",
 "language": "GDScript",
 "path": "res://scripts/movimiento/salto.gd"
-}, {
-"base": "Movimiento",
-"class": "VelocidadHorizontal",
-"language": "GDScript",
-"path": "res://scripts/movimiento/velocidad_horizontal.gd"
-}, {
-"base": "Movimiento",
-"class": "VelocidadVertical",
-"language": "GDScript",
-"path": "res://scripts/movimiento/velocidad_vertical.gd"
 } ]
 _global_script_class_icons={
 "AccionSonido": "res://iconos/sonido.png",
@@ -175,9 +165,7 @@ _global_script_class_icons={
 "PropulsionDireccional": "res://iconos/propulsion.png",
 "Recogible": "res://iconos/recogible.png",
 "ReflejoHorizontal": "res://iconos/reflejo.png",
-"Salto": "res://iconos/salto.png",
-"VelocidadHorizontal": "res://iconos/horizontal.png",
-"VelocidadVertical": "res://iconos/vertical.png"
+"Salto": "res://iconos/salto.png"
 }
 
 [application]
