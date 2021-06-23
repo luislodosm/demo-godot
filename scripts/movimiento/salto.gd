@@ -2,10 +2,11 @@ extends Movimiento
 class_name Salto, "res://iconos/salto.png"
 
 export var fuerza = 100
+export var accion = "saltar"
 onready var rayo = get_node_or_null("../RayCast2D") as RayCast2D
 
 func _physics_process(_delta):
-	if Input.is_action_just_pressed("saltar"):
+	if Input.is_action_just_pressed(accion):
 		if rayo:
 			if rayo.is_colliding():
 				saltar()
