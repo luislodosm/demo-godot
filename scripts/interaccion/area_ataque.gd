@@ -1,5 +1,5 @@
 extends Interaccion
-class_name AreaAtaque, "res://iconos/ataque.png"
+class_name AreaAtaque, "res://scripts/iconos/ataque.png"
 
 export var accion = "atacar"
 export var fuerza = 50

@@ -1,5 +1,5 @@
 extends Animacion
-class_name AnimadorAnimatedSprite, "res://iconos/animador.png"
+class_name AnimadorAnimatedSprite, "res://scripts/iconos/animador.png"
 
 export var accion = "derecha"
 export var animacion = "correr"

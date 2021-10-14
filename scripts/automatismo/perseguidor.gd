@@ -1,5 +1,5 @@
 extends Automatismo
-class_name CuerpoPerseguidor, "res://iconos/perseguidor.png"
+class_name CuerpoPerseguidor, "res://scripts/iconos/perseguidor.png"
 
 export var ruta_objetivo: NodePath
 export var velocidad = 100

@@ -1,5 +1,5 @@
 extends Interaccion
-class_name CuerpoGolpe, "res://iconos/colision.png"
+class_name CuerpoGolpe, "res://scripts/iconos/colision.png"
 
 export var fuerza = 50
 onready var cuerpo = get_parent() as RigidBody2D

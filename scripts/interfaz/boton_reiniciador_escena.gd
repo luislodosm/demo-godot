@@ -1,5 +1,5 @@
 extends Interfaz
-class_name BotonReiniciadorEscena, "res://iconos/reiniciador.png"
+class_name BotonReiniciadorEscena, "res://scripts/iconos/reiniciador.png"
 
 export var accion = "reiniciar"
 

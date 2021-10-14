@@ -1,5 +1,5 @@
 extends Mecanica
-class_name Movimiento, "res://iconos/movimiento.png"
+class_name Movimiento, "res://scripts/iconos/movimiento.png"
 
 onready var cuerpo = get_parent() as RigidBody2D
 

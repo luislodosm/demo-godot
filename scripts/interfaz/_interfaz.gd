@@ -1,5 +1,5 @@
 extends Mecanica
-class_name Interfaz, "res://iconos/interfaz.png"
+class_name Interfaz, "res://scripts/iconos/interfaz.png"
 
 onready var boton = get_parent() as Button
 

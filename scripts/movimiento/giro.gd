@@ -1,5 +1,5 @@
 extends Movimiento
-class_name Giro, "res://iconos/giro.png"
+class_name Giro, "res://scripts/iconos/giro.png"
 
 export var fuerza_giro = 500
 export var accion_derecha = "derecha" 

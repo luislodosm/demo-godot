@@ -1,5 +1,5 @@
 extends Interaccion
-class_name AccionSonido, "res://iconos/sonido.png"
+class_name AccionSonido, "res://scripts/iconos/sonido.png"
 
 export var sonido: AudioStream
 export var accion = "saltar"

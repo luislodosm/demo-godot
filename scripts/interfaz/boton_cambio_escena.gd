@@ -1,5 +1,5 @@
 extends Interfaz
-class_name BotonCambioEscena, "res://iconos/boton_escena.png"
+class_name BotonCambioEscena, "res://scripts/iconos/boton_escena.png"
 
 export(String, FILE, "*.tscn") var ruta_escena
 

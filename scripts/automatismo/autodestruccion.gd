@@ -1,5 +1,5 @@
 extends Automatismo
-class_name AutoDestruccion, "res://iconos/autodestruccion.png"
+class_name AutoDestruccion, "res://scripts/iconos/autodestruccion.png"
 
 export var explosion: PackedScene
 export var tiempo = 3.0

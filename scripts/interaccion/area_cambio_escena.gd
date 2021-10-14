@@ -1,5 +1,5 @@
 extends Interaccion
-class_name AreaCambioEscena, "res://iconos/escena.png"
+class_name AreaCambioEscena, "res://scripts/iconos/escena.png"
 
 export var esperado: NodePath
 export(String, FILE, "*.tscn") var ruta_escena

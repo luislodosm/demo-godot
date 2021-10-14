@@ -1,5 +1,5 @@
 extends Interfaz
-class_name BotonSalir, "res://iconos/salir.png"
+class_name BotonSalir, "res://scripts/iconos/salir.png"
 
 export var accion = "salir"
 

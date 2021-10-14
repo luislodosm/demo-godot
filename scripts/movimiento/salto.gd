@@ -1,5 +1,5 @@
 extends Movimiento
-class_name Salto, "res://iconos/salto.png"
+class_name Salto, "res://scripts/iconos/salto.png"
 
 export var fuerza = 100
 export var accion = "saltar"

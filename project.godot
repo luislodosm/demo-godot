@@ -140,39 +140,39 @@ _global_script_classes=[ {
 "path": "res://scripts/movimiento/salto.gd"
 } ]
 _global_script_class_icons={
-"AccionSonido": "res://iconos/sonido.png",
-"Animacion": "res://iconos/animacion.png",
-"AnimadorAnimatedSprite": "res://iconos/animador.png",
-"AreaAtaque": "res://iconos/ataque.png",
-"AreaCambioEscena": "res://iconos/escena.png",
-"AutoDestruccion": "res://iconos/autodestruccion.png",
-"Automatismo": "res://iconos/automatismo.png",
-"BotonCambioEscena": "res://iconos/boton_escena.png",
-"BotonReiniciadorEscena": "res://iconos/reiniciador.png",
-"BotonSalir": "res://iconos/salir.png",
-"CreadorObjetos": "res://iconos/creador.png",
-"CuerpoGolpe": "res://iconos/colision.png",
-"CuerpoPerseguidor": "res://iconos/perseguidor.png",
-"CuerpoVida": "res://iconos/vida.png",
-"FuerzaHorizontal": "res://iconos/horizontal.png",
-"FuerzaVertical": "res://iconos/vertical.png",
-"Giro": "res://iconos/giro.png",
-"Interaccion": "res://iconos/interaccion.png",
-"Interfaz": "res://iconos/interfaz.png",
-"LanzadorProyectiles": "res://iconos/lanzador.png",
-"Mecanica": "res://iconos/mecanica.png",
-"Movimiento": "res://iconos/movimiento.png",
-"PropulsionDireccional": "res://iconos/propulsion.png",
-"Recogible": "res://iconos/recogible.png",
-"ReflejoHorizontal": "res://iconos/reflejo.png",
-"Salto": "res://iconos/salto.png"
+"AccionSonido": "res://scripts/iconos/sonido.png",
+"Animacion": "res://scripts/iconos/animacion.png",
+"AnimadorAnimatedSprite": "res://scripts/iconos/animador.png",
+"AreaAtaque": "res://scripts/iconos/ataque.png",
+"AreaCambioEscena": "res://scripts/iconos/escena.png",
+"AutoDestruccion": "res://scripts/iconos/autodestruccion.png",
+"Automatismo": "res://scripts/iconos/automatismo.png",
+"BotonCambioEscena": "res://scripts/iconos/boton_escena.png",
+"BotonReiniciadorEscena": "res://scripts/iconos/reiniciador.png",
+"BotonSalir": "res://scripts/iconos/salir.png",
+"CreadorObjetos": "res://scripts/iconos/creador.png",
+"CuerpoGolpe": "res://scripts/iconos/colision.png",
+"CuerpoPerseguidor": "res://scripts/iconos/perseguidor.png",
+"CuerpoVida": "res://scripts/iconos/vida.png",
+"FuerzaHorizontal": "res://scripts/iconos/horizontal.png",
+"FuerzaVertical": "res://scripts/iconos/vertical.png",
+"Giro": "res://scripts/iconos/giro.png",
+"Interaccion": "res://scripts/iconos/interaccion.png",
+"Interfaz": "res://scripts/iconos/interfaz.png",
+"LanzadorProyectiles": "res://scripts/iconos/lanzador.png",
+"Mecanica": "res://scripts/iconos/mecanica.png",
+"Movimiento": "res://scripts/iconos/movimiento.png",
+"PropulsionDireccional": "res://scripts/iconos/propulsion.png",
+"Recogible": "res://scripts/iconos/recogible.png",
+"ReflejoHorizontal": "res://scripts/iconos/reflejo.png",
+"Salto": "res://scripts/iconos/salto.png"
 }
 
 [application]
 
 config/name="Demo Godot"
 config/description="Creado por Luis Lodos para el Instituto Tecnológico de Canarias, dentro del programa CODECAN del Gobierno de Canarias."
-config/icon="res://iconos/mecanica.png"
+config/icon="res://scripts/iconos/mecanica.png"
 
 [display]
 

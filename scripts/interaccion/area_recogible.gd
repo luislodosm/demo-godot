@@ -1,5 +1,5 @@
 extends Interaccion
-class_name Recogible, "res://iconos/recogible.png"
+class_name Recogible, "res://scripts/iconos/recogible.png"
 
 export var jugador: NodePath
 onready var area = get_parent() as Area2D

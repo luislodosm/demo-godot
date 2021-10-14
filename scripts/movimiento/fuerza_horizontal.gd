@@ -1,5 +1,5 @@
 extends Movimiento
-class_name FuerzaHorizontal, "res://iconos/horizontal.png"
+class_name FuerzaHorizontal, "res://scripts/iconos/horizontal.png"
 
 export var aceleracion = 200
 export var velocidad_maxima = 100

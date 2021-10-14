@@ -1,3 +1,3 @@
 extends Mecanica
-class_name Interaccion, "res://iconos/interaccion.png"
+class_name Interaccion, "res://scripts/iconos/interaccion.png"
 

@@ -1,5 +1,5 @@
 extends Interaccion
-class_name CuerpoVida, "res://iconos/vida.png"
+class_name CuerpoVida, "res://scripts/iconos/vida.png"
 
 export var vida = 100
 export var restos: PackedScene

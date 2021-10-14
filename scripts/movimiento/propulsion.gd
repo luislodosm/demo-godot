@@ -1,5 +1,5 @@
 extends Movimiento
-class_name PropulsionDireccional, "res://iconos/propulsion.png"
+class_name PropulsionDireccional, "res://scripts/iconos/propulsion.png"
 
 export var fuerza = 100
 export var accion = "arriba" 

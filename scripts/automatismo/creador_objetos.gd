@@ -1,5 +1,5 @@
 extends Automatismo
-class_name CreadorObjetos, "res://iconos/creador.png"
+class_name CreadorObjetos, "res://scripts/iconos/creador.png"
 
 export var objeto: PackedScene
 export var tiempo = 3.0
