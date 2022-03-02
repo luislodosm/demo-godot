@@ -1,2 +1,2 @@
 extends Node
-class_name Mecanica, "res://scripts/iconos/mecanica.png"
+class_name Mecanica, "iconos/mecanica.png"
